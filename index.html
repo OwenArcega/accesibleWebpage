@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página web sencilla</title>
+  <style>
+    /* Estilos CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+    nav {
+      background-color: #f2f2f2;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      padding: 10px;
+    }
+    nav a:hover {
+      background-color: #ddd;
+    }
+    main {
+      padding: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a mi página web</h1>
+  </header>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Sobre Nosotros</a>
+    <a href="#">Servicios</a>
+    <a href="#">Contacto</a>
+  </nav>
+  <main>
+    <section>
+      <h2>Contenido</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem omnis veniam quisquam dolore. Temporibus placeat nesciunt suscipit sit sed in a aspernatur omnis rerum nihil porro minus, reprehenderit veritatis esse.</p>
+      <button id="btn">Ir a google</button>
+    </section>
+    <section>
+      <h2>Imagen de relleno</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tenetur voluptas magnam reprehenderit iusto eos sint saepe quod aspernatur? Fugiat ad animi perferendis ducimus placeat necessitatibus sit hic, facilis aliquam.</p>
+      <img src="https://cdn-icons-png.flaticon.com/512/3577/3577429.png" role="presentation" height="100px" width="100px">
+      <h2>Información Importante</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vitae quaerat suscipit quasi saepe, consequuntur reiciendis itaque ut quas temporibus laborum quam dolorem neque necessitatibus voluptatum. Expedita voluptatibus nihil beatae.</p>
+      <img src="https://www.comparapps.com/wp-content/uploads/2023/01/Usuario-Con-Email-Por-Ano.png" alt="Cantidad de usuarios que usan email por millones organizados por año, desde el 2017 ha ido en aumento desde 4 mil millones" height="350px" width="500px">
+    </section>
+    <section>
+      <h2>Tabla</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid inventore quod, autem sunt quae assumenda dolore. Quas voluptas, velit id cum labore amet tempora expedita hic pariatur sequi facilis dolorum?</p>
+      <table alt="Información básica de los clientes contando con correo, edad y nombre.">
+        <caption>Nuestros clientes</caption>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Correo Electrónico</th>
+        </tr>
+        <tr>
+          <th scope="row">Juan Pérez</th>
+          <td>35</td>
+          <td>juan.perez@ejemplo.com</td>
+        </tr>
+        <tr>
+          <th scope="row">María Gómez</th>
+          <td>28</td>
+          <td>maria.gomez@ejemplo.com</td>
+        </tr>
+        <tr>
+          <th scope="row">Pedro Rodríguez</th>
+          <td>42</td>
+          <td>pedro.rodriguez@ejemplo.com</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <p>Suscribite al sitio web para estar al tanto de las novedades.</p>
+    <form action="#">
+      <label for="input">Correo</label> <input type="text" name="input" id="input" placeholder="ejemplo@gmail.com" aria-required="true" required>
+      <button type="submit">Suscribirse</button>
+    </form>
+    <p>&copy; 2024 Página web sencilla. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+    const btn = document.getElementById("btn");
+    btn.addEventListener('click', ()=>{
+      window.location = "https://google.com";
+    })
+  </script>
+</body>
+</html>
