@@ -79,6 +79,7 @@ td {
           <h3>Guía de Inversiones para Principiantes</h3>
           <p>Esta guía te brindará una introducción sólida al mundo de las inversiones, desde los conceptos básicos hasta estrategias avanzadas.</p>
           <a href="#" id="descargar-guia">Descargar Guía</a>
+          <p id="respuesta" style="display: none;" aria-hidden="true">Guia dascargada con exito</p>
         </li>
         <li>
           <h3>Calculadora de Jubilación</h3>
@@ -98,3 +99,12 @@ td {
   </footer>
 </body>
 </html>
+<script>
+  const download = document.getElementById('descargar-guia');
+  download.addEventListener('click', (e)=>{
+    e.preventDefault();
+    const parrafo = document.getElementById('respuesta');
+    parrafo.ariaHidden = false;
+    parrafo.style.display = "";
+  })
+</script>
