@@ -8,6 +8,12 @@
       margin: 0;
       padding: 0;
     }
+
+    img{
+      height: 200px;
+      width: 200px;
+    }
+
     header {
       background-color: #333;
       color: white;
@@ -83,7 +89,7 @@ td {
       <img src="https://cdn-icons-png.flaticon.com/512/3577/3577429.png" role="presentation" height="100px" width="100px">
       <h2>Estadísticas Financieras</h2>
       <p>Según estudios recientes, las personas que realizan una planificación financiera adecuada tienen un 30% más de probabilidades de alcanzar sus metas de inversión a largo plazo.</p>
-      <img src="https://www.comparapps.com/wp-content/uploads/2023/01/Usuario-Con-Email-Por-Ano.png" alt="Gráfico de barras que muestra el crecimiento de usuarios con correo electrónico por año" height="350px" width="500px">
+      <img src="https://scontent.fmty3-1.fna.fbcdn.net/v/t1.6435-9/107791343_3344002208964824_5225941141555092047_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=mZJmsywKsjUQ7kNvgFXSi_N&_nc_ht=scontent.fmty3-1.fna&oh=00_AYAu9_r3zpbUDUv7-dOwU6_WuZSVrEScWhUKDgmEvxsmnQ&oe=6675B827" alt="Gráfico de pastel que indica el porcentaje a invertir del salario. 25 por ciento para ahorros, 25 por ciento para inversión y 50 por ciento para gastos." height="350px" width="500px">
     </section>
     <section>
       <h2>Nuestros Clientes</h2>
@@ -121,5 +127,11 @@ td {
     </form>
     <p>&copy; 2024 Asesores Financieros. Todos los derechos reservados.</p>
   </footer>
+  <script>
+    const btn = document.getElementById("btn");
+    btn.addEventListener('click', ()=>{
+      window.location = "https://calendly.com/asesoresfinancieros"; // Reemplaza con tu URL de agendamiento de citas
+    })
+  </script>
 </body>
 </html>
