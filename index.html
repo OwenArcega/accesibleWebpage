@@ -9,9 +9,29 @@
       padding: 0;
     }
 
-    img{
-      height: 200px;
+    h1{
+      font-size: 32px;
+    }
+
+    h2{
+      font-size: 24px;
+    }
+
+    p{
+      font-size: medium;
+    }
+
+    #grafico{
+      height: 300px;
+      width: 300px;
+    }
+
+    #btn{
+      background-color: #333;
+      color: white;
       width: 200px;
+      height: 32px;
+      font-size: 16px;
     }
 
     header {
@@ -24,9 +44,15 @@
       padding: 10px;
       text-align: center;
     }
+
+    nav ul{
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+    }
+
     nav a {
       color: #333;
-      text-decoration: none;
       padding: 10px;
     }
     nav a:hover {
@@ -72,10 +98,20 @@ td {
     <h1>Asesores Financieros</h1>
   </header>
   <nav>
-    <a href="#">Sobre Nosotros</a>
-    <a href="#">Servicios</a>
-    <a href="recursos.html">Recursos</a>
-    <a href="#">Contacto</a>
+    <ul>
+      <li>
+        <a href="#">Sobre Nosotros</a>
+      </li>
+      <li>
+        <a href="#">Servicios</a>
+      </li>
+      <li>
+        <a href="recursos.html">Recursos</a>
+      </li>
+      <li>
+        <a href="#">Contacto</a>
+      </li>
+    </ul>
   </nav>
   <main>
     <section>
@@ -89,30 +125,30 @@ td {
       <img src="https://cdn-icons-png.flaticon.com/512/3577/3577429.png" role="presentation" height="100px" width="100px">
       <h2>Estadísticas Financieras</h2>
       <p>Según estudios recientes, las personas que realizan una planificación financiera adecuada tienen un 30% más de probabilidades de alcanzar sus metas de inversión a largo plazo.</p>
-      <img src="https://scontent.fmty3-1.fna.fbcdn.net/v/t1.6435-9/107791343_3344002208964824_5225941141555092047_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=mZJmsywKsjUQ7kNvgFXSi_N&_nc_ht=scontent.fmty3-1.fna&oh=00_AYAu9_r3zpbUDUv7-dOwU6_WuZSVrEScWhUKDgmEvxsmnQ&oe=6675B827" alt="Gráfico de pastel que indica el porcentaje a invertir del salario. 25 por ciento para ahorros, 25 por ciento para inversión y 50 por ciento para gastos." height="350px" width="500px">
+      <img id="grafico" src="https://scontent.fmty3-1.fna.fbcdn.net/v/t1.6435-9/107791343_3344002208964824_5225941141555092047_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=mZJmsywKsjUQ7kNvgFXSi_N&_nc_ht=scontent.fmty3-1.fna&oh=00_AYAu9_r3zpbUDUv7-dOwU6_WuZSVrEScWhUKDgmEvxsmnQ&oe=6675B827" alt="Gráfico de pastel que indica el porcentaje a invertir del salario. 25 por ciento para ahorros, 25 por ciento para inversión y 50 por ciento para gastos." height="350px" width="500px">
     </section>
     <section>
       <h2>Nuestros Clientes</h2>
       <p>En Asesores Financieros, nos enorgullecemos de contar con una base de clientes satisfechos que han logrado sus objetivos financieros gracias a nuestros servicios personalizados.</p>
-      <table>
+      <table alt="Disntintos testimonios de los usuarios que han contratado nuestros servicios.">
         <caption>Testimonios de Clientes</caption>
         <tr>
-          <th>Nombre</th>
-          <th>Edad</th>
-          <th>Testimonio</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Testimonio</th>
         </tr>
         <tr>
-          <td>Juan Pérez</td>
+          <th scope="row">Juan Pérez</td>
           <td>35</td>
           <td>"Gracias a los asesores financieros, pude comprar mi primera casa y planificar mi jubilación."</td>
         </tr>
         <tr>
-          <td>María Gómez</td>
+          <th scope="row">María Gómez</td>
           <td>28</td>
           <td>"Están siempre disponibles para responder mis preguntas y brindarme asesoramiento personalizado."</td>
         </tr>
         <tr>
-          <td>Pedro Rodríguez</td>
+          <th scope="row">Pedro Rodríguez</td>
           <td>42</td>
           <td>"Asesores Financieros me ayudó a diversificar mis inversiones y maximizar mis ganancias."</td>
         </tr>
@@ -127,11 +163,5 @@ td {
     </form>
     <p>&copy; 2024 Asesores Financieros. Todos los derechos reservados.</p>
   </footer>
-  <script>
-    const btn = document.getElementById("btn");
-    btn.addEventListener('click', ()=>{
-      window.location = "https://calendly.com/asesoresfinancieros"; // Reemplaza con tu URL de agendamiento de citas
-    })
-  </script>
 </body>
 </html>
